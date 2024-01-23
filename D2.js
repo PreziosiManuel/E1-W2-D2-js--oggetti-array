@@ -32,6 +32,18 @@ else if (num4 % 5 === 0) console.log("Non divisibile per 5");
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+const num1Ex4 = 10;
+const num2Ex4 = 2;
+
+if (num1Ex4 === 8) {
+  console.log("num1Ex4 uguale a 8");
+} else if (num2Ex4 === 8) {
+  console.log("num2Ex4 uguale a 8");
+} else if (num1Ex4 + num2Ex4 === 8 || num1Ex4 - num2Ex4 === 8) {
+  console.log("la loro addizione o sottrazione è =8");
+} else {
+  console.log("num1Ex4 ed num2Ex4 diversi da 8");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -40,15 +52,27 @@ else if (num4 % 5 === 0) console.log("Non divisibile per 5");
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+{
+  let totalShoppingCart = 60;
+  if (totalShoppingCart > 50) {
+    console.log("tot>50=Spedizione gratuita:");
+  } else {
+    console.log("tot>50= + 10 di spedizione:", totalShoppingCart + 10);
+  }
+}
 /* ESERCIZIO 6
-  Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
-  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
+Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
+Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+let totalShoppingCart = 60;
+let discoutValue = ("Sconto carrello:", totalShoppingCart * 20) / 100;
+let totalShop = totalShoppingCart - discoutValue;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (totalShoppingCart > 50) {
+  console.log("Tot con spedizione gratuita con 20% B.F.:", totalShop);
+} else {
+  console.log("tot + 10 di spedizione con 20% B.F.:", totalShop + 10);
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
